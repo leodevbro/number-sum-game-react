@@ -1,5 +1,6 @@
 import './index.css';
 import App from './components/App';
+import { App2 } from './components/App';
 import * as serviceWorker from './serviceWorker';
 import rend from './other-components/Rend';
 
@@ -7,7 +8,7 @@ import rend from './other-components/Rend';
 
 
 rend(App, "root1");
-rend(App, "root2");
+rend(App2, "root2");
 
 
 

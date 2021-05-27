@@ -35,6 +35,19 @@ const App = (props) => {
     );
 };
 
+export const App2 = (props) => {
+    return(
+        <button 
+            onClick={() => {
+                rend(StarMatch, props.containerID);
+            }}
+            key={props.containerID}
+        >
+            Start Game 2
+        </button>
+    );
+};
+
 
 
 export default App;
