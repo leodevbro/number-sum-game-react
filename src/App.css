@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+html {
+  scroll-behavior: smooth; /* with default browser settings it works in Firefox but not in Chrome */
+}
+
+
+#root1, #root2 {
+    text-align: center;
+}
+
+
+
+body > div {
+  border: 2px solid gray;
+  margin: 5px;
+  padding: 7px;
+}
+
+
+
+.game {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.body {
+  display: flex;
+}
+
+.help {
+  color: #666;
+  margin: 10px;
+  text-align: center;
+}
+
+.left {
+  text-align: center;
+  width: 50%;
+  border: thin solid #ddd;
+}
+
+.right {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+  border: thin solid #ddd;
+}
+
+.star {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.star:after {
+  content: "\2605"; /* star symbol */
+  font-size: 60px;
+}
+
+.number {
+  background-color: #eee;
+  border: thin solid #ddd;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.number:focus, .number:active {
+  outline: none;
+  border: thin solid #ddd;
+}
+
+.timer {
+  color: #666;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.game-done .message {
+  font-size: 250%;
+  font-weight: bold;
+  margin: 15px;
+}
+
